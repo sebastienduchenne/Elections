@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Elections</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- titre menu de gauche -->
+    <string-array name="nav_drawer_items">
+        <item >A la une</item>
+        <item >Elections départementales de 2015</item>
+        <item >Calendrier électoral</item>
+        <item >Les élections en France</item>
+        <item >FAQ</item>
+        <item >Paramètres</item>
+        <item >Quitter</item>
+        <item >Temps</item>
+    </string-array>
+
+    <!-- icones menu de gauche -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_voter</item>
+        <item>@drawable/ic_calendrier</item>
+        <item>@drawable/ic_info_cle</item>
+        <item>@drawable/ic_faq</item>
+        <item>@drawable/ic_parametres</item>
+        <item>@drawable/ic_exit</item>
+        <item>@drawable/ic_temps</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+
+
+    <!-- main : pour les tests -->
+
+    <string name="hors_election">Hors élection</string>
+    <string name="avant_election">Avant élection</string>
+    <string name="pendant_election">Pendant élection</string>
+    <string name="apres_election">Après élection</string>
+
+    <!-- Accueil -->
+
+    <string name="title_accueil">Accueil</string>
+    <string name="voter">Voter</string>
+    <string name="enjeux">Enjeux des élections</string>
+    <string name="calendrier">Calendrier électoral</string>
+    <string name="faq">FAQ</string>
+
+    <!-- page de connection -->
+
+    <string name="entrer_id_mdp">Veuillez entrer votre identifiant et votre mot de passe.</string>
+    <string name="identifiant">Identifiant</string>
+    <string name="mdp">Mot de passe</string>
+    <string name="se_connecter">Se connecter</string>
+
+    <!-- page d'informations pour le vote -->
+
+    <string name="informations_avant_vote">Informations</string>
+
+    <!-- Calendrier -->
+
+    <string name="title_calendrier">Calendrier électoral</string>
+
+    <!-- Enjeux liste des élections -->
+
+    <string name="title_enjeux1_liste_elections">Enjeux des élections</string>
+
+    <!-- Enjeux explications élection -->
+
+    <string name="title_enjeux2_explications">Enjeux2</string>
+
+    <!-- FAQ -->
+
+    <string name="title_FAQ">FAQ</string>
+
+    <!-- liste candidats avant élections -->
+
+
+
+    <!-- Candidat choisi -->
+
+    <string name="vous_avez_choisi">Vous avez choisi de voter pour :</string>
+    <string name="prenom_nom">Prénom Nom</string>
+    <string name="informations_avant_validation">Informations</string>
+    <string name="cb_choix">Je souhaite valider mon choix.</string>
+    <string name="annuler">Annuler</string>
+    <string name="valider">Valider</string>
+
+    <!-- A voté -->
+
+    <string name="a_vote">A voté !</string>
+    <string name="veuillez_deconnecter">Votre vote a été comptabilisé. Vous avez été déconnecté.</string>
+    <string name="retour_accueil">Retour au menu</string>
+
+
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="resultats pas dispo"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:id="@+id/tv_res_pas_dispo"/>
+
+    <ScrollView
+        android:id="@+id/sv_resultats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_resultats_t1_t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_res_t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2ème tour :"
+                android:layout_margin="15dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/monBleuClair"/>
+
+            <TextView
+                android:id="@+id/tv_res_t2_non_dispo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Les résultats du 2ème tour ne sont pas encore disponibles."
+                android:layout_margin="10dp"
+                android:textSize="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_resultats_t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_resultats_t2_pres2012"/>
+
+                <TextView
+                    android:id="@+id/tv_statistiques_tour_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Statistiques"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_stat_details_tour_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="details statistiques"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_resultats_t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_res_t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1er tour :"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/monBleuClair"/>
+
+                <FrameLayout
+                    android:id="@+id/fl_resultats_t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    class="com.project.duchennesebastien.ResultatsCandidatsT1Fragment"
+                    android:visibility="gone"/>
+
+                <FrameLayout
+                    android:id="@+id/fl_resultats_reims_t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    class="com.project.duchennesebastien.ResultatsCandidatsReimsT1Fragment"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_statistiques_tour_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Statistiques"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_stat_details_tour_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="details statistiques"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

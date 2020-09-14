@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanc"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView_vous_avez_choisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:paddingTop="@dimen/padding"
+            android:paddingBottom="@dimen/padding"
+            android:textSize="15dp"
+            android:text="@string/vous_avez_choisi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imgv_choix_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/logo_eelv"/>
+
+            <TextView
+                android:id="@+id/textView_prenom_nom"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/prenom_nom" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_info_confirmation"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:text="@string/informations_avant_validation" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Je souhaite valider mon choix"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="100dp"
+            android:id="@+id/switch1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/bt_annuler"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bt_bleu"
+            android:textSize="18dp"
+            android:textColor="@color/blanc"
+            android:text="@string/annuler" />
+
+        <Button
+            android:id="@+id/bt_valider"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_valider2_clair"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/valider"
+            android:textColor="@color/blanc"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

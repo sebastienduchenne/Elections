@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+
+    <ImageView
+        android:id="@+id/imgv_resultat_t1_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/photo_francois_bayrou"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_resultats_candidat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="François Bayrou"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imgv_resultat_t1_photo"/>
+
+
+    <TextView
+        android:id="@+id/tv_resultats_parti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_toRightOf="@+id/imgv_resultat_t1_photo"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tv_resultats_candidat"
+        android:text="Union pour un Mouvement Pop." />
+
+
+    <ImageView
+        android:id="@+id/imgv_barre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/barre_hollande"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_resultats_parti"
+        android:layout_toRightOf="@+id/imgv_resultat_t1_photo"
+        android:layout_marginBottom="5dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_resultats_pourcent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:text="9,13 %" />
+
+
+    <TextView
+        android:id="@+id/tv_resultats_nb_voix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_resultats_pourcent"
+        android:text="3 275 122 voix" />
+
+
+</RelativeLayout>

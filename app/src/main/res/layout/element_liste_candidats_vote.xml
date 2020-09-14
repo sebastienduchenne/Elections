@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/blanc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgv_candidat_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/photo_francois_bayrou"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgv_candidat_photo">
+
+        <TextView
+            android:id="@+id/tv_candidat_nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:text="François Bayrou" />
+
+
+        <TextView
+            android:id="@+id/tv_candidat_parti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tv_candidat_nom"
+            android:text="Modem"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

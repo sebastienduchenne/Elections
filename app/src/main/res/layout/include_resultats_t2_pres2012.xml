@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/photo_1"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:src="@drawable/photo_francois_hollande"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="51,63 %"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18 004 656 voix"
+                android:textSize="10dp"/>
+
+            <ImageView
+                android:id="@+id/barre_2"
+                android:layout_width="60dp"
+                android:layout_height="52dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/barre_hollande2"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="48,37 %"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16 865 340 voix"
+                android:textSize="10dp"/>
+
+            <ImageView
+                android:id="@+id/barre_1"
+                android:layout_marginTop="10dp"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/barre_sarkozy2"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/photo_2"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:src="@drawable/photo_sarkozy"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="François Hollande"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nicolas Sarkozy"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        </LinearLayout>
+
+</LinearLayout>
